@@ -1,0 +1,29 @@
+<p>
+  <mat-toolbar>
+    <span>Prueba Fredy</span>
+    <span class="example-spacer"></span>
+  </mat-toolbar>
+</p>
+
+<mat-sidenav-container class="example-container">
+  <mat-sidenav class="sidenav-primary" mode="side" opened>
+    <h4>Menu</h4>
+
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button">
+      <mat-icon>person</mat-icon>
+      <span><a [routerLink]="['view/usuario']">Usuario</a></span>
+    </button>
+
+    <mat-divider></mat-divider>
+
+    <button mat-button class="menu-button">
+      <mat-icon>logout</mat-icon>
+      <span>Salir</span>
+    </button>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

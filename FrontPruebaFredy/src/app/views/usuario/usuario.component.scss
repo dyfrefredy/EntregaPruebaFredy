@@ -1,0 +1,9 @@
+table {
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;  /* Opcional: puedes ajustar la alineación horizontal */
+    align-items: center;  /* Opcional: puedes ajustar la alineación vertical */
+}
